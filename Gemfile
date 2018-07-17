@@ -45,5 +45,6 @@ group :development, :test do
   gem "capybara"
   gem "pry"
   gem "rspec-rails", "~> 3.7"
+  gem "rubocop", "0.58.1"
   gem "spring"
 end

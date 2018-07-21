@@ -30,4 +30,5 @@ private
         categories_attributes: [:name]
       )
   end
+
 end

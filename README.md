@@ -95,7 +95,7 @@ class PostsController < ApplicationController
   ...
 
   private
-  
+
   def post_params
     params.require(:post).permit(:title, :content, category_ids:[])
   end
@@ -167,7 +167,7 @@ class PostsController < ApplicationController
   ...
 
   private
-  
+
   def post_params
     params.require(:post).permit(:title, :content, category_ids:[], categories_attributes: [:name])
   end
@@ -219,6 +219,5 @@ Now, we're only creating a new category if it doesn't already exist with the cur
 As you can see, it doesn't really matter how complex our associations are –– Active Record is really good at managing that complexity for us. We can always drop down a level of abstraction if needed to customize the way our application behaves.
 
 ## Does this need an update?
-Please open a [GitHub issue](https://github.com/learn-co-curriculum/phrg-has-many-through-forms-rails/issues) or [pull-request](https://github.com/learn-co-curriculum/phrg-has-many-through-forms-rails/pulls). Provide a detailed description that explains the issue you have found or the change you are proposing. Then "@" mention your instructor on the issue or pull-request, and send them a link via Connect.
 
-<p data-visibility='hidden'>PHRG Has Many Through Forms Rails</p>
+Please open a [GitHub issue](https://github.com/learn-co-curriculum/phrg-has-many-through-forms-rails/issues) or [pull-request](https://github.com/learn-co-curriculum/phrg-has-many-through-forms-rails/pulls). Provide a detailed description that explains the issue you have found or the change you are proposing. Then "@" mention your instructor on the issue or pull-request, and send them a link via Connect.
